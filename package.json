@@ -1,0 +1,28 @@
+{
+  "name": "json2react",
+  "version": "0.0.0",
+  "description": "Creates React components from a JSON structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --ui bdd tests/setup.js tests/**/*-test.js",
+    "coverage": "istanbul cover --root . _mocha -- --ui bdd tests/setup.js tests/**/*-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/txgruppi/json2react.git"
+  },
+  "author": {
+    "name": "Tarcisio Gruppi",
+    "email": "txgruppi@gmail.com",
+    "url": "https://txgruppi.com"
+  },
+  "license": "GPLv3",
+  "homepage": "https://github.com/txgruppi/json2react.git",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  }
+}
