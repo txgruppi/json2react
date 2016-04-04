@@ -8,7 +8,7 @@ Use JSON to create React Stateless Components.
 
 I needed a way to store static views on the database as data, not as HTML code.
 
-Using this library you can fetch some remote data which represents a UI and render it with React.
+Using this library you can fetch some remote data which represents an UI and render it with React.
 
 ## Install
 
