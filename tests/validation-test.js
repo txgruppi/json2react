@@ -11,7 +11,7 @@ describe("validations", function(){
     validValues(it, [{type:"div"}, "a string"]);
     invalidValues(it,
       [undefined, null, true, false, 0, 1, 1.1, function(){}, []],
-      "schema must be a string or an plain object"
+      "schema must be a string or a plain object"
     );
   });
 
@@ -23,7 +23,7 @@ describe("validations", function(){
         { type: 0 }, { type: 1 }, { type: 1.1 }, { type: function(){} },
         { type: [] }, { type: {} }, { type: "\n\r\t" }, { type: "" },
       ],
-      "schema.type must be a string and must have a non-empty value"
+      "schema.type must be a non-empty string"
     );
     it("should be trimmed", function(){
       var spy = sinon.spy();
@@ -47,7 +47,7 @@ describe("validations", function(){
         { type: "div", props: "\n\r\t" },
         { type: "div", props: "" },
       ],
-      "schema.props must be an plain object"
+      "schema.props must be a plain object"
     );
   });
 });
