@@ -1,3 +1,9 @@
+[![GitHub license](https://img.shields.io/github/license/txgruppi/json2react.svg?style=flat-square)](https://github.com/txgruppi/json2react)
+[![David](https://img.shields.io/david/txgruppi/json2react.svg?style=flat-square)](https://github.com/txgruppi/json2react)
+[![npm](https://img.shields.io/npm/v/json2react.svg?style=flat-square)](https://www.npmjs.com/package/json2react)
+[![Travis](https://img.shields.io/travis/txgruppi/json2react.svg?style=flat-square)](https://travis-ci.org/txgruppi/json2react)
+[![Codecov](https://img.shields.io/codecov/c/github/txgruppi/json2react.svg?style=flat-square)](https://codecov.io/github/txgruppi/json2react)
+
 # json2react
 
 Use JSON to create React Stateless Components.
