@@ -1,6 +1,11 @@
 "use strict";
 
-function json2react(create, schema) {
+function json2react(create, mapper, schema) {
+  if (typeof schema === "undefined") {
+    schema = mapper;
+    mapper = null;
+  }
+
   if (typeof schema === "string") {
     return schema;
   }
@@ -27,7 +32,9 @@ function json2react(create, schema) {
 
   var type = schema.type;
   var props = schema.props || null;
-  var children = schema.children && [].concat(schema.children).map(json2react.bind(null, create));
+  var children = schema.children && [].concat(schema.children).map(json2react.bind(null, create, mapper));
+
+  mapper && (type = mapper(type, props));
 
   return create.apply(create, [].concat([type, props]).concat(children));
 }
