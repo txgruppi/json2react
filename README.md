@@ -56,6 +56,40 @@ const jsonUI = {
 ReactDOM.render(j2r(createElement, jsonUI), document.body);
 ```
 
+You can pass a mapper function as second argument to map types to components.
+
+```javascript
+import { createElement } from "react";
+import j2r from "json2react";
+import MyDivComponent from "./MyDivComponent";
+
+const jsonUI = {
+  type: "MyDivComponent",
+  props: {
+    style: { textAlign: "center" },
+  },
+  children: [
+    { type: "h1", children: "It works!" },
+    {
+      type: "p",
+      children: {
+        type: "small",
+        children: "This component was created from JSON",
+      },
+    },
+  ],
+};
+
+const mapTypeToComponent = (type, props) => {
+  switch (type) {
+    case "MyDivComponent": return MyDivComponent;
+  }
+  return type;
+};
+
+ReactDOM.render(j2r(createElement, mapTypeToComponent, jsonUI), document.body);
+```
+
 ## Schema
 
 Please check the file http://github.com/txgruppi/json2react/blob/v0.0.0/schema.json for the detailed schema description.
