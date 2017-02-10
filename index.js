@@ -5,6 +5,10 @@ function json2react(create, mapper, schema) {
     schema = mapper;
     mapper = null;
   }
+  
+  if (schema === null) {
+    return null;
+  }
 
   if (typeof schema === "string") {
     return schema;

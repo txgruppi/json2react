@@ -8,9 +8,9 @@ var create = function(){};
 
 describe("validations", function(){
   describe("schema type", function(){
-    validValues(it, [{type:"div"}, "a string"]);
+    validValues(it, [{type:"div"}, "a string", null]);
     invalidValues(it,
-      [undefined, null, true, false, 0, 1, 1.1, function(){}, []],
+      [undefined, true, false, 0, 1, 1.1, function(){}, []],
       "schema must be a string or a plain object"
     );
   });
