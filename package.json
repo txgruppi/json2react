@@ -1,6 +1,6 @@
 {
   "name": "json2react",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Creates React components from a JSON structure",
   "main": "index.js",
   "scripts": {
