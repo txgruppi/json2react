@@ -107,7 +107,3 @@ Tests and coverage
 ```sh
 npm run coverage
 ```
-
-## License
-
-GPLv3
