@@ -20,7 +20,7 @@
   "homepage": "https://github.com/txgruppi/json2react.git",
   "devDependencies": {
     "chai": "^3.5.0",
-    "codecov": "^1.0.1",
+    "codecov": "^3.6.5",
     "mocha": "^6.2.0",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0"
