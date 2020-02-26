@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --ui bdd tests/setup.js tests/**/*-test.js",
-    "coverage": "istanbul cover --root . _mocha -- --ui bdd tests/setup.js tests/**/*-test.js",
     "travis-ci": "npm run coverage && codecov"
   },
   "repository": {
@@ -22,7 +21,6 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
-    "istanbul": "^0.4.2",
     "mocha": "^6.2.0",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0"
