@@ -21,7 +21,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "codecov": "^3.7.1",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0"
   }
